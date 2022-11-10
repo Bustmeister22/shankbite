@@ -1,0 +1,19 @@
+x = 0
+while (true)
+do
+x=x+1
+local shark = game:GetService("Workspace").Sharks.GreatWhite.SharkMain.Engine
+
+xe = game:GetService("Workspace").Sharks.GreatWhite.SharkMain.Engine.Position.x
+ye = game:GetService("Workspace").Sharks.GreatWhite.SharkMain.Engine.Position.y
+ze = game:GetService("Workspace").Sharks.GreatWhite.SharkMain.Engine.Position.z
+wait(.01)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(xe,ye+15,ze)
+
+if x == 1000
+then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1000,10000,1000)
+    x = 0
+    wait(.2)
+end
+end
