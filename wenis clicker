@@ -1,0 +1,4 @@
+while (true)
+do
+game.VirtualUser:Button1Down(Vector2.new(-0,-0,-0)) wait(.05) game.VirtualUser:Button1Up(Vector2.new(-0,-0,-0))
+end
